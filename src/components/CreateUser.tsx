@@ -10,10 +10,22 @@ import {
 
 interface MyFormValues {
   firstName: string
+  lastName: string
+  email: string
+  phoneNumber: string
+  password: string
+  passwordConfirm: string
 }
 
 export const CreateUser: React.FC<{}> = () => {
-  const initialValues: MyFormValues = { firstName: '' }
+  const initialValues: MyFormValues = {
+    firstName: '',
+    lastName: '',
+    email: '',
+    phoneNumber: '',
+    password: '',
+    passwordConfirm: '',
+  }
   return (
     <div>
       <h1>My Example</h1>
