@@ -8,6 +8,8 @@ import { About } from './components/About'
 import { Contact } from './components/Contact'
 import { Menu } from './components/Menu'
 import { Navbar } from './components/Navbar'
+import { CreateUser } from './components/CreateUser'
+import { Login } from './components/Login'
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/menu' element={<Menu />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/createuser' element={<CreateUser />} />
+        <Route path='/login' element={<Login />} />
       </Routes>
     </div>
   )
